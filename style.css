@@ -373,6 +373,43 @@ a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
 }
 
+#votacion {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+.votation-header h3 {
+  font-size: 1.75rem;
+  color: #333;
+}
+
+.form-control {
+  font-size: 1rem;
+}
+
+table {
+  width: 100%;
+}
+
+.table th, .table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table-light {
+  background-color: #f8f9fa;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+
+.bg-home-color {
+  background-color: #9BAF80;
+  border-radius: 15px;
+  position: relative; 
+}
 
 /* .bg-home {
   background-color: #e1e68b;
