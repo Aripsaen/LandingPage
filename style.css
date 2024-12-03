@@ -359,8 +359,46 @@ a {
 }
 
 .bg-home {
-  background-image: url('images/natural-green-grass-blurred.jpg');
+  background-image: url('images/picnic-pattern.jpg');
+  background-size: cover; /* Hace que la imagen ocupe todo el contenedor */
+  background-position: center center; /* Centra la imagen */
+  position: relative; /* Para poder agregar un overlay encima de la imagen */
 }
+
+/* Contenedor con fondo blanco */
+.white-container {
+  background-color: #ffffff;  /* Fondo blanco */
+  padding: 30px;  /* Espaciado alrededor del contenido */
+  border-radius: 10px;  /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+}
+
+
+/* .bg-home {
+  background-color: #e1e68b;
+  position: relative; 
+} */
+
+
+/* 
+.bg-home::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+
+#billboard {
+  position: relative;
+  z-index: 2; 
+}
+ */
+
 
 .image-holder img {
   object-fit: cover;  /* Ajusta la imagen para cubrir todo el contenedor */
