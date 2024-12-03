@@ -1,0 +1,19 @@
+[
+    {
+      "origin": [
+        "https://aripsaen.github.io"
+      ],
+      "responseHeader": [
+        "Content-Type",
+        "Authorization"
+      ],
+      "method": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "maxAgeSeconds": 3600
+    }
+  ]
+  
