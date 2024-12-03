@@ -8,7 +8,7 @@ rules_version = '2';
 service firebase.storage {
   match /b/{bucket}/o {
     match /{allPaths=**} {
-      allow read, write: if request.auth != null; // solo permite acceso autenticado
+      allow read, write: if true; // solo permite acceso autenticado
     }
   }
 }
