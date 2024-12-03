@@ -1264,7 +1264,7 @@
         <div class="col-md-8">
           <h3 class="section-title text-center">Galería de Fans</h3>
           <p class="text-center">Sube una imagen de un insecto y cuéntanos sobre él.
-            (funcionalidad extra para el futuro, aun no funciona porque es necesario un plan pago en Firebase)
+            (si no funciona la carga, intentar en un modo incognito)
           </p>
           <!-- Formulario para cargar imagen -->
           <form id="form-galeria" class="d-flex flex-column align-items-center" enctype="multipart/form-data">
@@ -1278,7 +1278,7 @@
       </div>
     </div>
   </section>
-  
+
   <!-- Sección para mostrar la galería -->
   <section id="galeria-imagenes" class="py-5">
     <div class="container">
@@ -1287,9 +1287,7 @@
       </div>
     </div>
   </section>
-  
 
-  <!-- --------------------EDITADO-------------------- -->
 
   <section id="votacion" class="newsletter">
     <div class="container justify-content-center bg-home-color">
@@ -1300,6 +1298,7 @@
             <h3 class="section-title text-uppercase">¿Qué insecto es tu favorito?</h3>
           </div>
           <form id="votation-form" class="d-flex flex-wrap gap-2">
+            <input type="text" name="name" placeholder="Tu nombre" class="form-control form-control-lg">
             <div class="form-group col-12">
               <label for="insectos" class="text-white">Selecciona tu insecto favorito</label>
               <select name="insectos" id="insectos" class="form-control form-control-lg">
@@ -1326,7 +1325,7 @@
                 <th scope="col">Votos</th>
               </tr>
             </thead>
-            <tbody id="resultados">
+            <tbody id="votationsTable">
               <!-- Los resultados se mostrarán aquí -->
             </tbody>
           </table>
@@ -1532,37 +1531,34 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="js/script.min.js"></script>
-  <script src="js/main.js"></script>
+
   <script type="module">
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-analytics.js";
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
-
+  
     // Your web app's Firebase configuration
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     const firebaseConfig = {
-      apiKey: "AIzaSyCZmgs1AJSc1EXfVvUPZjC2p-KzjOR_RyY",
-      authDomain: "landing-page-b0cc9.firebaseapp.com",
-      databaseURL: "https://landing-page-b0cc9-default-rtdb.firebaseio.com",
-      projectId: "landing-page-b0cc9",
-      storageBucket: "landing-page-b0cc9.firebasestorage.app",
-      messagingSenderId: "412328195260",
-      appId: "1:412328195260:web:dad3a7cd0255feba97ccb9",
-      measurementId: "G-LWZX40W813"
+      apiKey: "AIzaSyBVmTKH3RGsEM48jYw7Cv2S5018NKWQp2M",
+      authDomain: "new-landing-page-1c364.firebaseapp.com",
+      databaseURL: "https://new-landing-page-1c364-default-rtdb.firebaseio.com",
+      projectId: "new-landing-page-1c364",
+      storageBucket: "new-landing-page-1c364.firebasestorage.app",
+      messagingSenderId: "84857422704",
+      appId: "1:84857422704:web:41f952e9d858fbe65645b5",
+      measurementId: "G-ZDQ8WPREVK"
     };
-
-    
-
+  
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
   </script>
-<script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js"></script>
-
-<script type="module" src="js/app.js"></script>
+  
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/app.js"></script>
 
 </body>
 
